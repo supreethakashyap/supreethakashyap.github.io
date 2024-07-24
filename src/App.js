@@ -11,7 +11,7 @@ import Skills from "./components/Skills/Skills";
 import CertificationAwards from "./components/CertificationAwards/CertificationAwards";
 
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Routes,
   Navigate
