@@ -150,31 +150,52 @@ button:focus {
     display: none !important;
   }
 }
-.navbar-brand {
+.navbar-brand .navLink {
   color: rgb(250, 250, 250) !important;
 }
-
+.navLink{
+  color: white !important;
+  text-decoration: double !important;
+  font-weight: 500;
+  padding: 0.8rem 1rem !important;
+  position: relative;
+}
 .logo {
   height: 1.4em !important;
   width: 2.5em !important;
 }
 
-.navbar-nav .nav-link {
+.navbar-nav .nav-link .navLink {
   color: white !important;
   padding-right: 1rem !important;
   padding-left: 1rem !important;
 }
 
-.nav-link {
+.nav-link .navLink{
   padding: 0.8rem 1rem !important;
 }
 
 @media (max-width: 767px) {
-  .nav-link {
+  .nav-link .navLink{
     padding: 0.7rem 1rem !important;
   }
 }
+@media (max-width: 767px) {
+  .navLink {
+      margin-right: 10px;
+      font-size: 0.9rem;
+  }
+}
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .navLink {
+      margin-right: 15px;
+      font-size: 0.95rem;
+  }
+}
+.navLink:hover {
+  color: #6a1b9a; 
+}
 .navbar-nav .nav-item {
   position: relative;
   margin-left: 20px;
@@ -187,7 +208,7 @@ button:focus {
   z-index: 1;
 }
 
-.navbar-nav .nav-item a::after {
+.navbar-nav .nav-item .navLink a::after {
   content: "";
   position: relative;
   display: block;
@@ -200,8 +221,10 @@ button:focus {
   z-index: -1;
   transition: all 0.3s ease-out 0s;
 }
-
-.navbar-nav .nav-item a:hover::after {
+.navLink a::after{
+  text-decoration: underline !important;
+}
+.navbar-nav .nav-item .navLink a:hover::after {
   width: 100%;
 }
 
@@ -260,30 +283,71 @@ button:focus {
   background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
   background-position: top center;
   background-repeat: no-repeat;
-  padding-bottom: 1px !important;
-  padding-top: 30px !important;
+  padding: 60px 0;
+    color: #fff;
 }
 
 .home-content {
   padding: 9rem 0 2rem !important;
   color: whitesmoke;
-  text-align: left;
+  text-align: center;
 }
-
 .heading {
-  font-size: 2.4em !important;
-  padding-left: 50px !important;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
 }
-
 .heading-name {
-  font-size: 2.5em !important;
-  padding-left: 45px !important;
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 20px;
 }
-
 .main-name {
   color: #cd5ff8;
 }
+.home-header h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
 
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .heading {
+      font-size: 2rem;
+  }
+
+  .heading-name {
+      font-size: 1.5rem;
+  }
+
+  .home-intro {
+      padding: 15px;
+  }
+
+  .home-header h4 {
+      font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .heading {
+      font-size: 2.2rem;
+  }
+
+  .heading-name {
+      font-size: 1.8rem;
+  }
+
+  .home-intro {
+      padding: 20px;
+  }
+
+  .home-header h4 {
+      font-size: 1.3rem;
+  }
+}
 .Typewriter__wrapper {
   font-size: 2.2em !important;
   color: #be6adf !important;
@@ -448,10 +512,10 @@ button:focus {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
 }
 
 .project-card {
+  display: grid;
   padding-top: 50px !important;
   padding-bottom: 50px !important;
   padding-left: 25px !important;
@@ -543,11 +607,58 @@ button:focus {
 /* --------- */
 
 .about-section {
-  position: relative !important;
-  padding-top: 150px !important;
-  padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
   color: white !important;
+}
+.about-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.quote-card-view {
+  background: #2c2c34;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  padding: 20px;
+}
+
+.about-activity {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.about-activity svg {
+  margin-right: 10px;
+}
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .heading {
+      font-size: 2rem;
+  }
+
+  .about-img {
+      padding-top: 50px;
+  }
+
+  .quote-card-view {
+      padding: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .heading {
+      font-size: 2.2rem;
+  }
+
+  .about-img {
+      padding-top: 80px;
+  }
+
+  .quote-card-view {
+      padding: 20px;
+  }
 }
 
 .tech-icons {
@@ -734,30 +845,115 @@ button:focus {
   }
 }
 /* Project Card */
-.projectCard{
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.projectCard {
   height: 100%;
-  width: 100%;
+}
+
+/* Additional styling for responsiveness */
+@media (max-width: 767px) {
+  .projectCard, .projectCard .card-body, .projectCard .card-title {
+      text-align: center;
+  }
+
+  .card-title {
+      font-size: 1.2rem;
+  }
 }
 
 /* Experience */
-.expCard{
-  margin-top: 100px;
-  height:max-content;
+#experience {
+  padding: 20px 0;
 }
-  .exp-body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(5px + 1.7vmin);
-    color: white;
+
+.expCard {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.expCard:hover {
+  transform: translateY(-5px);
+}
+
+.expCard .card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.expCard .main-name {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.exp-body {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.expCard .card-body {
+  padding: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .expCard, .expCard .card-body, .expCard .card-title {
+    text-align: center;
   }
+
+  .expCard .card-title {
+    font-size: 1.3rem;
+  }
+}
+
   /* Certification and Awards Section */
+.container {
+  padding: 20px 0;
+}
 
-  .CertificateCard{
-    border-color:"white";
+/* h1 {
+  color: #6a1b9a;
+  margin-bottom: 20px;
+  text-align: center;
+} */
+
+.certificate-card {
+  border: none;
+  height: 100%;;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.certificate-card:hover {
+  transform: translateY(-5px);
+}
+
+.certificate-body {
+  background-color: black;
+  color: white;
+  padding: 15px;
+}
+
+.main-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.certificate-img {
+  height: auto;
+  width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .certificate-card, .certificate-body, .main-name {
+      text-align: center;
   }
 
-  .certificateBody{
-    background-color: black;
+  .main-name {
+      font-size: 1rem;
   }
+}

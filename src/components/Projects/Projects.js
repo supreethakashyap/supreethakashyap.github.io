@@ -6,14 +6,16 @@ import Footer from "../Footer";
 
 function Projects() {
   return (
-    <Container fluid className="project-section">
-      <h1 style={{color:"white"}}><strong>Projects</strong></h1>
+    <section>
+    <Container fluid className="home-section" id="projects">
       <Particle />
      <Container>
+     <h1 style={{color:"white"}}><strong>Projects</strong></h1>
     <ProjectCard />
     </Container >
-    <br/><br/><br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/>
     </Container> 
+    </section>
   );
 }
 

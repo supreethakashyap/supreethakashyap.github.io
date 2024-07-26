@@ -7,7 +7,7 @@ import Footer from "../Footer";
 
 function CertificationAwards() {
   return (
-    <Container fluid className="about-section">
+    <Container fluid className="about-section" id="certificationAwards">
       <Particle />
       <Container>
         <CertificationAwardCards />

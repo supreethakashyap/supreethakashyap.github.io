@@ -14,11 +14,11 @@ function Home2() {
     <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
-          <Col md={12} className="home-about-social">
+          {/* <Col className="home-about-social">
             <h1>CONTACT ME</h1>
             <h4>E-MAIL</h4>
-            <h5>supreetha.kashyap15@gmail.com</h5>
-          </Col>
+            <h5><a href="mailto:supreetha.kashyap15@gmail.com" className="navLink">supreetha.kashyap15@gmail.com</a></h5>
+          </Col> */}
         </Row>
       </Container>
     </Container>

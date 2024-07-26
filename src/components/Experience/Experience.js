@@ -6,7 +6,7 @@ import Footer from "../Footer";
 
 function About() {
   return (
-    <Container fluid className="project-section">
+    <Container fluid className="home-section">
       <Particle />
      <Container>
     <ExperienceCard />

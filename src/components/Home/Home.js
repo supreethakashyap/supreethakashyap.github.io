@@ -1,11 +1,14 @@
 import React from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import myPic from "../../Assets/myPic.jpg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import ResumeNew from "./ResumeNew";
-import Footer from "../Footer";
+import About from "../About/About";
+import Experience from "../Experience/Experience";
+import Projects from "../Projects/Projects";
+import CertificationAwards from "../CertificationAwards/CertificationAwards";
 
 function Home() {
   return (
@@ -14,38 +17,47 @@ function Home() {
         <Particle />
         <Container className="home-content">
           <Row>
-            <Col md={7} className="home-header">
-              <h1 style={{ paddingBottom: 5,textAlign: "center" }} className="heading">
+            <Col>
+              <img
+                src={myPic}
+                alt="home pic"
+                className="img-fluid"
+                style={{ display: "block", marginLeft: "auto", marginRight: "auto" }}
+              />
+            </Col>
+          </Row>
+          <Row>
+            <Col className="home-header">
+              <h1 className="heading">
                 Hi There!{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
                 </span>
               </h1>
 
-              <h1 className="heading-name" style={{textAlign: "center" }}>
+              <h1 className="heading-name">
                 I'M
-                <strong className="main-name" > SUPREETHA KASHYAP</strong>
+                <strong className="main-name"> SUPREETHA KASHYAP</strong>
               </h1>
 
-              <div style={{ padding: 50, textAlign: "center" }}>
-                <h4>APPLICATION DEVELOPMENT ANALYST @ ACCENTURE</h4>
-                <h4>FULL STACK DEVELOPER</h4>
+              <div className="home-intro">
+                <h6>APPLICATION DEVELOPMENT ANALYST @ ACCENTURE</h6>
+                <h6>FULL STACK DEVELOPER</h6>
                 <ResumeNew />
+                <h1>CONTACT ME</h1>
+                <h4>E-MAIL</h4>
+                <h5><a href="mailto:supreetha.kashyap15@gmail.com" className="navLink">supreetha.kashyap15@gmail.com</a></h5>
               </div>
-            </Col>
-            <Col md={5} style={{ paddingBottom: 20 }}> 
-            <img
-              src={myPic}
-              alt="home pic"
-              className="img-fluid"
-              style={{ height: "auto", width: "100%" }}
-            />
             </Col>
           </Row>
         </Container>
       </Container>
-      <Home2 />
+      <About />
+      <Experience />
+      <Projects />
+      <CertificationAwards />
     </section>
   );
 }
+
 export default Home;

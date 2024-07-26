@@ -11,14 +11,14 @@ function AboutCard() {
             My goal is to apply data-driven decision-making and advanced analytical techniques
             to drive business growth and optimize processes. 
             I'm also a developer with experience in database management and application development. 
-            Currently pursuing master's in <strong className="purple">Computer Science</strong> with a focus on database systems and analytics.
+            Currently pursuing a master's in <strong className="purple">Computer Science</strong> with a focus on database systems and analytics.
             <br />
             Additionally, I'm an <strong className="purple">AWS Certified Cloud Practitioner.</strong>
             <br />
             I am a quick learner and collaborative team player with a strong work ethic.
             <br />
             <br />
-            Apart from coding, other activities that I love to do
+            Apart from coding, other activities that I love to do:
           </p>
           <ul>
             <li className="about-activity">

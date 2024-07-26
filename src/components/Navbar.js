@@ -52,63 +52,34 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+              <Nav.Link href="#home" className="navLink" onClick={() => updateExpanded(false)}>
+                <AiOutlineHome style={{ marginBottom: "6px", color: "white" }} /> Home
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/about"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+              <Nav.Link href="#about" className="navLink" onClick={() => updateExpanded(false)}>
+                <AiOutlineUser style={{ marginBottom: "6px", color: "white" }} /> About
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/skills"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
-                />{" "}
-                Skills
+              <Nav.Link href="#experience" className="navLink" onClick={() => updateExpanded(false)}>
+                <CgFileDocument style={{ marginBottom: "6px", color: "white" }} /> Experience
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/Experience"
-                onClick={() => updateExpanded(false)}
-              >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Experience
+              <Nav.Link href="#projects" className="navLink" onClick={() => updateExpanded(false)}>
+                <ImBlog style={{ marginBottom: "6px", color: "white" }} /> Projects
               </Nav.Link>
             </Nav.Item>
-
+            
             <Nav.Item>
-              <Nav.Link
-               as={Link}
-               to="/project"
-               onClick={() => updateExpanded(false)}
-              >
-                <ImBlog style={{ marginBottom: "2px" }} />Projects
+              <Nav.Link href="#certificationAwards" className="navLink" onClick={() => updateExpanded(false)}>
+                <AiFillTrophy style={{ marginBottom: "6px", color: "white" }} /> Awards & Certifications
               </Nav.Link>
             </Nav.Item>
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/certifications"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiFillTrophy style={{ marginBottom: "2px" }} /> Certifications & Awards
-              </Nav.Link>
-            </Nav.Item>
-
           </Nav>
         </Navbar.Collapse>
       </Container>
