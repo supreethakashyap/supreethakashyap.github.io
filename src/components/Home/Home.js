@@ -46,7 +46,7 @@ function Home() {
                 <ResumeNew />
                 <h1>CONTACT ME</h1>
                 <h4>E-MAIL</h4>
-                <h5><a href="mailto:supreetha.kashyap15@gmail.com" className="navLink">supreetha.kashyap15@gmail.com</a></h5>
+                <h5><a href="mailto:supreetharkashyap@gmail.com" className="navLink">supreetharkashyap@gmail.com</a></h5>
               </div>
             </Col>
           </Row>
