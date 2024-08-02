@@ -28,12 +28,12 @@ function Home() {
           </Row>
           <Row>
             <Col className="home-header">
-              <h1 className="main-name">
+              <h3>
                 Hi There!{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
                 </span>
-              </h1>
+              </h3>
 
               <h1 className="main-name">
                 I'm
