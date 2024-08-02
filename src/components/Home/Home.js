@@ -41,8 +41,8 @@ function Home() {
               </h1>
 
               <div className="home-intro">
-                <h6> CS Grad @ UT Arlington</h6>
-                <h6>Ex Accenture</h6>
+                <h4> CS Grad @ UT Arlington</h4>
+                <h4>Ex Accenture</h4>
                 <ResumeNew />
                 <h1>CONTACT ME</h1>
                 <h4>E-MAIL</h4>
