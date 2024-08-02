@@ -28,21 +28,21 @@ function Home() {
           </Row>
           <Row>
             <Col className="home-header">
-              <h1 className="heading">
+              <h1 className="main-name">
                 Hi There!{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
                 </span>
               </h1>
 
-              <h1 className="heading-name">
-                I'M
+              <h1 className="main-name">
+                I'm
                 <strong className="main-name"> SUPREETHA KASHYAP</strong>
               </h1>
 
               <div className="home-intro">
-                <h6>APPLICATION DEVELOPMENT ANALYST @ ACCENTURE</h6>
-                <h6>FULL STACK DEVELOPER</h6>
+                <h6> CS Grad @ UT Arlington</h6>
+                <h6>Ex Accenture</h6>
                 <ResumeNew />
                 <h1>CONTACT ME</h1>
                 <h4>E-MAIL</h4>
