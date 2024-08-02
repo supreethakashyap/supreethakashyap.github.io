@@ -16,6 +16,7 @@ function ExperienceCards(props) {
               <ul>
                 <li className="exp-body">
                   Primarily responsible for developing web applications including a supply chain management tool using Blazor and a seat management system with Angular.</li>
+                <li className="exp-body">Designed and maintained databases to support application functionality, ensuring data integrity.</li>
                  <li className="exp-body">Utilized analytics to track and understand user usage patterns, , and employed data visualization in Blazor to develop comprehensive dashboards and reports.</li>
                  <li className="exp-body">Worked with designers to develop user-centric interfaces, deployed applications to cloud-based environments, and integrated various APIs.</li>
                 <br/>
@@ -37,9 +38,9 @@ function ExperienceCards(props) {
                 <li className="exp-body">
                   Responsible for addressing interface usability issues and collaborating with developers to review and refine test cases.
                 </li>
-                <br />
+                <li className="exp-body"> Developed automated tests to review test cases.</li>
                 <li className="exp-body">
-                  Documented test plans and test scripts and Presented client demos of the application's new features..
+                  Documented test plans and test scripts and Presented client demos of the application's new features.
                 </li>
                 <br />
               </ul>
